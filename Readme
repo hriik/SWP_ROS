@@ -1,0 +1,13 @@
+Beispiel um das node_example zu starten:
+Ich habe zwei workspaces, da ich ros von source gebaut habe.
+Ersterer hat das ROS Projekt. Nachdem dashier http://wiki.ros.org/indigo/Installation/Source erledigt wurde und die catkin tools mit APT-GET installiert wurden, muss das Ganze noch gesourced werden:
+source ~/catkin_ros/devel
+#eigentlicher Workspace
+source ~/catkin_ws/devel
+#muss denke ich nicht, kann aber...
+export ROS_PACKAGE_PATH=~/catkin_ros:$ROS_PACKAGE_PATH
+export ROS_PACKAGE_PATH=~/catkin_ws:$ROS_PACKAGE_PATH
+#dann starten mit:
+roslaunch node_example c++_node_example.launch
+
+gl&hf
